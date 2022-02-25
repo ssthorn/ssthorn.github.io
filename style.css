@@ -1,105 +1,111 @@
 
 *{
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 html,
 body{
-   /* width: 100%;
-   height: 100%;
-   overflow: hidden; 
-   background-image: url("https://cdn.shopify.com/s/files/1/0264/5563/8064/products/big_dot_01_1024x1024.jpg?v=1633136730");
-   background-size: cover;
-   background-repeat: no-repeat; */
-   box-sizing: border-box;
-   margin:25px;
+ /* width: 100%;
+ height: 100%;
+ overflow: hidden; 
+ background-image: url("https://cdn.shopify.com/s/files/1/0264/5563/8064/products/big_dot_01_1024x1024.jpg?v=1633136730");
+ background-size: cover;
+ background-repeat: no-repeat; */
+ box-sizing: border-box;
+ margin:25px;
 }
 .responsive-header {
-    display: grid;
-    align-items: baseline;
-    grid-template-columns: 1fr 2em;
-    grid-gap: 1%;
-    /* grid-template-columns: repeat(2, 1fr);  */
-    padding: 0;
-    margin-bottom: 0;
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: 1fr 2em;
+  grid-gap: 1%;
+  /* grid-template-columns: repeat(2, 1fr);  */
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .responsive-header h1 {
-        /* color: rgb(192, 192, 192);
-        font-size: 5em; */
-        color: rgb(216, 36, 36);
-        font-size: 2em
+      /* color: rgb(192, 192, 192);
+      font-size: 5em; */
+      color: rgb(216, 36, 36);
+      font-size: 2em
 }
 
-@media (min-width: 480px) {
-    .responsive-header h1{
-        color: rgb(192, 192, 192);
-        font-size: 5em;
-    }
 
-}
 .dot {
-    height: 25px;
-    width: 25px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-  }
-@media (min-width: 480px) {
-    .dot {
-        height: 50px;
-        width: 50px;
-        background-color: rgb(216, 36, 36);
-        border-radius: 50%;
-        display: inline-block;
-    }
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }
+
 
 .responsive-container {
-    display: grid;
-    grid-gap: 1%;
-    grid-template-columns: 1fr; 
-    padding: 0;
-    margin-bottom: 25px;
-  }
-  
-  @media (min-width: 480px) {
-    .responsive-container {
-      grid-template-columns: repeat(4, 1fr); 
-    }
+  display: grid;
+  grid-gap: 1%;
+  grid-template-columns: 1fr; 
+  padding: 0;
+  margin-bottom: 25px;
 }
-  
-  .responsive-container li {
-    background-color: rgb(10, 57, 73);
-    color: rgb(198, 212, 212);
-    height: 80px;
-    list-style-type: none;
-    padding: 0;
-    font-size: 2rem;
-    text-align: center;
+
+
+.responsive-container li {
+  background-color: rgb(10, 57, 73);
+  color: rgb(198, 212, 212);
+  height: 80px;
+  list-style-type: none;
+  padding: 0;
+  font-size: 2rem;
+  text-align: center;
+  height: max-content;
+}
+
+.main-container {
+  display: grid;
+  /* grid-gap: 25px; */
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.content-container {
+  height: 15em;
+  background-color: #cbf2a8;
+}
+
+p {
     height: max-content;
-  }
+    padding: 1em;
+}
 
+/*media queries*/
+
+@media (min-width: 480px) {
+  .responsive-header h1{
+      color: rgb(192, 192, 192);
+      font-size: 5em;
+  }
+}
+
+@media (min-width: 480px) {
+  .dot {
+      height: 50px;
+      width: 50px;
+      background-color: rgb(216, 36, 36);
+      border-radius: 50%;
+      display: inline-block;
+  }
+}
+
+@media (min-width: 480px) {
+  .responsive-container {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+@media (min-width: 480px) { 
   .main-container {
-    display: grid;
-    grid-gap: 25px;
     grid-template-columns: 1fr;
-    text-align: center;
   }
-  p {
-      height: max-content;
-      padding: 1em;
-  }
-
-  @media (min-width: 480px) { 
-    .main-container {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .content-container {
-    background-color: #cbf2a8;
-  }
-
+}
 
 /* iPhone SE/iPhone 5S = 320px
 Galaxy/iPhone 6 = 380px - 400px
@@ -116,4 +122,3 @@ Desktops = 1024px–1800px */
 1200 pixels // big screens
 Target your styles against these
 breakpoints (you can m */
-

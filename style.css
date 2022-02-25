@@ -30,7 +30,7 @@ body{
         font-size: 2em
 }
 
-@media (min-width: 500px) {
+@media (min-width: 480px) {
     .responsive-header h1{
         color: rgb(192, 192, 192);
         font-size: 5em;
@@ -44,7 +44,7 @@ body{
     border-radius: 50%;
     display: inline-block;
   }
-@media (min-width: 500px) {
+@media (min-width: 480px) {
     .dot {
         height: 50px;
         width: 50px;
@@ -62,7 +62,7 @@ body{
     margin-bottom: 25px;
   }
   
-  @media (min-width: 500px) {
+  @media (min-width: 480px) {
     .responsive-container {
       grid-template-columns: repeat(4, 1fr); 
     }
@@ -90,7 +90,7 @@ body{
       padding: 1em;
   }
 
-  @media (min-width: 500px) { 
+  @media (min-width: 480px) { 
     .main-container {
       grid-template-columns: 1fr;
     }
@@ -116,3 +116,4 @@ Desktops = 1024px–1800px */
 1200 pixels // big screens
 Target your styles against these
 breakpoints (you can m */
+

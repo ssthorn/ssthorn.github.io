@@ -24,25 +24,34 @@ $(document).ready(function(){
 });
 
 $("#projects").on("click", function(){
-    console.log("projects has been clicked")
     $(".projects1").toggleClass("projects1-open");
-});
-$("#projects1-close").on("click", function() {
-    console.log("close thingy clicked");
-    $(".projects1").removeClass("projects1-open");
+    $(".resume1").removeClass("resume1-open");
+    $(".about1").removeClass("about1-open");
+    $(".links1").removeClass("links1-open");
 });
 
 $("#resume").on("click", function(){
-    console.log("resume has been clicked")
     $(".resume1").toggleClass("resume1-open");
+    $(".about1").removeClass("about1-open");
+    $(".links1").removeClass("links1-open");
+    $(".projects1").removeClass("projects1-open");
 });
-$("#projects1-close").on("click", function() {
-    console.log("close thingy clicked");
+
+
+$("#about").on("click", function(){
+    $(".about1").toggleClass("about1-open");
     $(".resume1").removeClass("resume1-open");
+    $(".projects1").removeClass("projects1-open");
+    $(".links1").removeClass("links1-open");
 });
 
 
-
+$("#links").on("click", function(){
+    $(".links1").toggleClass("links1-open");
+    $(".about1").removeClass("about1-open");
+    $(".resume1").removeClass("resume1-open");
+    $(".projects1").removeClass("projects1-open");
+});
 
 
 });

@@ -5,11 +5,8 @@
 
 
 $(document).ready(function(){
-  $("li").on({
-      mouseover: function(){
-          $(this).css("background-color", "rgb(10, 57, 73)");
-      },  
-     
+  $(".button").on({
+   
       mouseleave: function(){
           $(this).css("background-color", "rgb(10, 57, 73)");
       },
@@ -28,6 +25,7 @@ $("#projects").on("click", function(){
     $(".resume1").removeClass("resume1-open");
     $(".about1").removeClass("about1-open");
     $(".links1").removeClass("links1-open");
+    $(".contact").removeClass("dot-open");
 });
 
 $("#resume").on("click", function(){
@@ -35,6 +33,7 @@ $("#resume").on("click", function(){
     $(".about1").removeClass("about1-open");
     $(".links1").removeClass("links1-open");
     $(".projects1").removeClass("projects1-open");
+    $(".contact").removeClass("dot-open");
 });
 
 
@@ -43,6 +42,7 @@ $("#about").on("click", function(){
     $(".resume1").removeClass("resume1-open");
     $(".projects1").removeClass("projects1-open");
     $(".links1").removeClass("links1-open");
+    $(".contact").removeClass("dot-open");
 });
 
 
@@ -51,7 +51,31 @@ $("#links").on("click", function(){
     $(".about1").removeClass("about1-open");
     $(".resume1").removeClass("resume1-open");
     $(".projects1").removeClass("projects1-open");
+    $(".contact").removeClass("dot-open");
 });
+
+$("#dot").on("click", function(){
+    console.log("dot clicked");
+    $(".contact").toggleClass("dot-open");
+    $(".links1").removeClass("links1-open");
+    $(".about1").removeClass("about1-open");
+    $(".resume1").removeClass("resume1-open");
+    $(".projects1").removeClass("projects1-open");
+
+
+});
+
+$(".responsive-header h1").on("click", function(){
+    console.log("h1 clicked");
+    window.location.assign("index.html")
+
+})
+
+
+
+
+
+
 
 
 });

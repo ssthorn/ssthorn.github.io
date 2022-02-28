@@ -8,15 +8,15 @@ $(document).ready(function(){
   $(".button").on({
    
       mouseleave: function(){
-          $(this).css("background-color", "rgb(10, 57, 73)");
+          $(this).css("color", "white");
       },
      
       mousedown: function(){
-          $(this).css("background-color", "#cbf2a8");
+          $(this).css("color", "#cbf2a8");
       },
 
       mouseup: function(){
-        $(this).css("background-color", "rgb(10, 57, 73)");
+         $(this).css("color", "white");
       },
 });
 
@@ -54,20 +54,20 @@ $("#links").on("click", function(){
     $(".contact").removeClass("dot-open");
 });
 
-$("#dot").on("click", function(){
-    console.log("dot clicked");
-    $(".contact").toggleClass("dot-open");
-    $(".links1").removeClass("links1-open");
-    $(".about1").removeClass("about1-open");
-    $(".resume1").removeClass("resume1-open");
-    $(".projects1").removeClass("projects1-open");
-
-
+$("#dot").on({
+    mouseup: function(){
+        console.log("dot click");
+        $(".contact").toggleClass("dot-open");
+        $(".links1").removeClass("links1-open");
+        $(".about1").removeClass("about1-open");
+        $(".resume1").removeClass("resume1-open");
+        $(".projects1").removeClass("projects1-open");   
+    },
+   
 });
 
 $(".responsive-header h1").on("click", function(){
-    console.log("h1 clicked");
-    window.location.assign("index.html")
+    window.location = 'index.html'
 
 })
 

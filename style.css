@@ -1,173 +1,181 @@
-
-*{
-  font-family: 'Roboto', sans-serif;
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    cursor: default;
+    font-size: 1em;
+    overflow-x: clip;
 }
 
-body{
- /* width: 100%;
- overflow: hidden; 
- background-image: url("https://cdn.shopify.com/s/files/1/0264/5563/8064/products/big_dot_01_1024x1024.jpg?v=1633136730");
- backround-image: url("
- background-size: cover; */
- height: 91vh;
- background-repeat: no-repeat;
- box-sizing: border-box;
- background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3384f16d-5fe3-4c01-9982-ff04f8ddae55/d21f2ci-5202926c-c513-4a10-8cf2-f6db9234d0b1.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzMzODRmMTZkLTVmZTMtNGMwMS05OTgyLWZmMDRmOGRkYWU1NVwvZDIxZjJjaS01MjAyOTI2Yy1jNTEzLTRhMTAtOGNmMi1mNmRiOTIzNGQwYjEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.g68VL5Q1psnrMW4oNvSwQX8ycZRGphFm81yICyGj8Nw");
- background-size:cover;
- 
- margin:2em;
-}
-.responsive-header {
-  display: grid;
-  align-items: baseline;
-  justify-content: end;
-  grid-template-columns: 1fr 2em;
-  grid-gap: 1%;
-  /* grid-template-columns: repeat(2, 1fr);  */
-  padding: 0;
-  margin-bottom: 0;
-  margin-top: 0;
+html, body {
+    height: 100%;
+    
 }
 
-.responsive-header h1 {
-      /* color: rgb(192, 192, 192);
-      font-size: 5em; */
-      color: rgb(216, 36, 36);
-      font-size: 2em;
-      cursor: pointer;
-      
+#menu {
+    font-size: 3em;
+    padding-right: .5em;
 }
 
-#dot {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
+.fruitty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
 }
 
-
-.responsive-container {
-  display: grid;
-  grid-gap: 1%;
-  grid-template-columns: 1fr; 
-  justify-items: end;
-  padding: 0;
-  margin: 0;
-  top: 0;
+h1 {
+    font-size: 20em;
+    color: black;  
+}
+h2 {
+    font-size: 3.3em;
+}
+h3 {
+    padding: 1em;
+}
+#down {
+    font-size: 10em;
 }
 
-
-.button {
-  background-color: none;
-  color: white;
-  height: 80px;
-  list-style-type: none;
-  padding: 0;
-  font-size: 2rem;
-  text-align: center;
-  height: max-content;
-  cursor:pointer;
+#menu {
+    transition: .5s; 
+    padding: 20px;
 }
 
-.main-container {
-  display: grid;
-  grid-gap: 1%;
-  grid-template-columns: 1fr; 
-  padding: 0;
-  margin: 0;
-}
-.projects1, .resume1, .about1, .links1, .contact{
-  height: 70vh;
-  background-color: rgba(112, 112, 112, 0.3);
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  position: fixed;
-  transition: all 0.45s ease-in-out;
-  transform: translatex(-100%);
-  
-  z-index:1;
-  padding: 13m;
-}
-.projects1-open, .resume1-open, .about1-open, .links1-open, .button-open, .dot-open {
-  transform: translatex(0%);
-  opacity: 1;
-  z-index:1;
+#menu:hover {
+    color: orange;
 }
 
-.tab h2, .tab a {
-  color: rgb(10, 57, 73);
-  display: block;
-  font-size: 3em;
-  margin: 25px auto;
-  text-align: center;
-  text-decoration: none;
-}
-.tab a {
-  color:white;
-  font-style: italic;
-}
-
-.tab p {
-  color: rgb(10, 57, 73);
-  display: block;
-  font-size: 1em;
-  margin: 25px auto;
-  text-align: center;
-  text-decoration: none;
-
-}
-text-area {
-  font-family: 'Courier New', Courier, monospace;
+#hidden-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: right;
+    width: 15%;
+    padding:1em;
+    position: fixed;
+    top:2.5em;
+    text-align: right;
+    transition: 0.5s;
+    transform: translatex(500%);
+    right:7em;       
+    height: 4em;
+    z-index: 10;
 }
 
-
-
-/*media queries*/
-
-@media (min-width: 480px) {
-  .responsive-header h1{
-      color: rgb(192, 192, 192);
-      font-size: 5em;
-  }
+#hidden-nav.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: right;
+    width: 30%;
+    padding:1em;
+    position: fixed;
+    top:2.5em;
+    text-align: right;
+    transition: 0.5s;
+    transform: translatex(0%);
+    right:3em;       
+    height: 4em;
+    z-index: 10; 
 }
 
-@media (min-width: 480px) {
-  #dot {
-      height: 50px;
-      width: 50px;
-      background-color: rgb(216, 36, 36);
-      border-radius: 50%;
-      display: inline-block;
-  }
+#hidden-nav a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: .5s;
 }
 
-@media (min-width: 480px) {
-  .responsive-container {
-    grid-template-columns: repeat(4, 1fr); 
-  }
+#hidden-nav a:hover {
+    color:orange;
 }
 
-@media (min-width: 480px) { 
-  .main-container {
-    grid-template-columns: 1fr;
-  }
+.fruitty:nth-child(1){
+    background-attachment: fixed;
+    z-index: 4;
 }
-@media (min-width: 480px) {
-  .tab {
-    height: 30em;
-  }
+   
+.fruitty:nth-child(2){
+    background-attachment:fixed;
+    z-index: 3;
 }
 
-/* iPhone SE/iPhone 5S = 320px
-Galaxy/iPhone 6 = 380px - 400px
-iPhone 6+, Galaxy Note = 420px
-Phablet/tablet = 500px–650px
-iPad/iPad mini = 768px
-Laptops = 960px–1200px
-Desktops = 1024px–1800px */
+.fruitty:nth-child(3){
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip:text;
+    height: 33%;
+}
+
+.fruitty:nth-child(4){
+    height: 4em;
+    z-index: 1;
+}
+
+.fruitty:nth-child(6){
+    background-attachment: fixed;
+    z-index: 4;
+}
+
+#footer-card{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(white,black);
+    height: 25%;
+    z-index: 4;
+}
+
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    padding:0;
+    height: 2em;
+    z-index: 10;
+}
+
+.fixed-header{
+    display: flex;
+    top: 0;
+}
+
+.fixed-footer{
+    bottom: 0;
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bottom {
+    justify-content: right;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    display: inline-block;
+}
 
 /* Good Breakpoints
 480 pixels // phones

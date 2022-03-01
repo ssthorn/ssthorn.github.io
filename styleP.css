@@ -1,0 +1,33 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    cursor: default;
+    font-size: 1em;
+    overflow-x: clip;
+}
+html, body {
+    height: 100%;
+    
+}
+#feed-grid {
+    display: grid;
+    grid-template-rows: 3 1fr 1fr 1fr;
+    justify-content: center;
+    width: fit-content;
+    
+}
+.container {
+    padding: 1em;
+    justify-content: center;
+    text-align: center;
+    
+}
+#meduza {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: auto;
+    padding: 3em;
+}

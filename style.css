@@ -4,12 +4,13 @@
     margin: 0;
     font-family: 'Arimo', sans-serif;
     cursor: default;
-    font-size: 1em;
-    overflow-x: clip;
+    font-size: 1rem;
+    /* overflow-x: clip; */
 }
 
 html, body {
     height: 100%;
+    /* font-size: 4vw; */
     
 }
 
@@ -27,29 +28,39 @@ html, body {
     height: 100%;
     background-position: center center;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 h1 {
-    font-size: 20em;
+    font-size: 20rem;
     color: black;  
 }
 h2 {
-    font-size: 3.3em;
+    font-size: 3.3rem;
 }
-h3 {
+#nametag {
     padding: 1em;
+    transition: 1s ease-in-out;
 }
+
+#nametag:hover {
+    color:orange;
+}
+
 #down {
-    font-size: 10em;
+    font-size: 10rem;
 }
 
 #menu {
     transition: .5s; 
     padding: 20px;
+    transition: 0.5s;
+    
 }
 
 #menu:hover {
     color: orange;
+    
 }
 
 #hidden-nav {
@@ -75,14 +86,14 @@ h3 {
     justify-content: space-between;
     align-items: right;
     width: 30%;
-    padding:1em;
+    padding:1rem;
     position: fixed;
-    top:2.5em;
+    top:2.5rem;
     text-align: right;
     transition: 0.5s;
     transform: translatex(0%);
-    right:3em;       
-    height: 4em;
+    right:3rem;       
+    height: 4rem;
     z-index: 10; 
 }
 
@@ -100,12 +111,12 @@ h3 {
 
 .fruitty:nth-child(1){
     background-attachment: fixed;
-    z-index: 4;
+    z-index: 0;
 }
    
 .fruitty:nth-child(2){
     background-attachment:fixed;
-    z-index: 3;
+    z-index: 0;
 }
 
 .fruitty:nth-child(3){
@@ -114,6 +125,8 @@ h3 {
     -webkit-background-clip: text;
     background-clip:text;
     height: 33%;
+    z-index: 1;
+    overflow-x: clip;
 }
 
 .fruitty:nth-child(4){
@@ -123,7 +136,7 @@ h3 {
 
 .fruitty:nth-child(6){
     background-attachment: fixed;
-    z-index: 4;
+    z-index: 0;
 }
 
 #footer-card{
@@ -139,7 +152,8 @@ h3 {
     background-attachment: fixed;
     background-image: linear-gradient(white,black);
     height: 25%;
-    z-index: 4;
+    z-index: 0;
+    border: .5rem solid black;
 }
 
 .fixed-header, .fixed-footer{
@@ -175,6 +189,37 @@ nav a{
     text-decoration: none;
     padding: 1em;
     display: inline-block;
+}
+
+@media screen and (min-width: 480px){
+    html {
+        font-size: 5vw;
+    }
+    h1 {
+        color: orange;
+        
+    }
+}
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 5vw;
+    }
+
+
+}
+@media screen and (min-width: 960px) {
+    html {
+        font-size: 4vw;
+    }
+
+
+}
+@media screen and (min-width: 1200px){
+    html {
+        font-size: 4vw;
+    }
+
+
 }
 
 /* Good Breakpoints

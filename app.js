@@ -49,16 +49,16 @@ $('#contact').removeClass("open");
 $('#nametag').click(function(){
     $('.open').removeClass("open");
     $('html, body').animate({ scrollTop: 0 }, 'fast');
+});
+
+$('#footer-card').click(function(){
+    $('.open').removeClass("open");
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
+
 
 
 
 });
-
-
-
-
-
-
 
 
 

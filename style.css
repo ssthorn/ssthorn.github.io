@@ -13,7 +13,6 @@ html, body {
     /* font-size: 4vw; */
 }
 
-
 #menu {
     font-size: 3em;
     padding-right: .5em;
@@ -35,6 +34,7 @@ h1 {
     font-size: 20rem;
     color: black;  
 }
+
 h2 {
     font-size: 3.3rem;
 }
@@ -230,11 +230,13 @@ h2 {
     align-content: center;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 .grid-unit {
     height: 3rem;
     width: 3rem;
     background-color: white;
 }
+
 #grid2 {
     gap: 9rem;
     scroll-snap-align:inherit;

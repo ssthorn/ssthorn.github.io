@@ -46,6 +46,14 @@ $('#contact').removeClass("open");
 
 });
 
+$('.fruitty').click(function(){
+    $('#links').removeClass("open");
+    $('#resume').removeClass("open");
+    $('#about').removeClass("open");
+    $('#contact').removeClass("open");
+    $('#hidden-nav').removeClass("open");
+})
+
 $('#nametag').click(function(){
     $('.open').removeClass("open");
     $('html, body').animate({ scrollTop: 0 }, 'fast');
@@ -55,12 +63,19 @@ $('#footer-card').click(function(){
     $('.open').removeClass("open");
     $('html, body').animate({ scrollTop: 0 }, 'fast');
 
-
-
-
 });
 
+$('#welcome').on({
+    mouseover: function(){
+        $(this).css("color" , "white")
+    },
+    mouseleave: function(){
+        $(this).css("color" , "orange")
+    },
+ 
+    
 
+})
 
 
 });

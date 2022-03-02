@@ -3,6 +3,7 @@ $(()=>{
 $('.fruitty:odd').css("background-image", "url(https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg)");
 $('.fruitty:even').css("background-image", "url(https://cdn.britannica.com/40/75640-050-F894DD85/tiger-Siberian.jpg)");
 $('#bear').css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/a/a9/GrizzlyBearJeanBeaufort.jpg)");
+$('#projects').css("background-image", "url(https://scitechdaily.com/images/Goosebumps.jpg");
 
 $('#menu').click(function(){
         console.log('menu clicked')

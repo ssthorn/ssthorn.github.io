@@ -47,6 +47,12 @@ h2 {
     color:orange;
 }
 
+#dot {
+    width:3em;
+    height: 3em;
+    border-radius: 3em;
+    background-color: lightpink;
+}
 
 #down {
     font-size: 15rem;

@@ -1,24 +1,16 @@
 * {
+    border: 0;
     padding: 0;
     margin: 0;
+    font-family: 'Arimo', sans-serif;
     cursor: default;
     font-size: 1rem;
-    
+    /* overflow-x: clip; */
 }
 
-body {
-    font-family: 'Arimo', sans-serif;
-    background: #333;
-    line-height: 1.6;
-    height: 100vh;
-}
-
-.container {
-    width: 100%;
+html, body {
     height: 100%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    
+    /* font-size: 4vw; */
 }
 
 #menu {
@@ -31,15 +23,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     font-weight: bold;
-    width: 100%;
     height: 100%;
     background-position: center center;
     background-size: cover;
-    scroll-snap-align: center;
+    overflow-x: hidden;
 }
 
+h1 {
+    font-size: 20rem;
+    color: black;  
+}
 
 h2 {
     font-size: 3.3rem;
@@ -54,9 +48,9 @@ h2 {
 }
 
 #dot {
-    width:3rem;
-    height: 3rem;
-    border-radius: 3rem;
+    width:3em;
+    height: 3em;
+    border-radius: 3em;
     background-color: lightpink;
 }
 
@@ -122,8 +116,9 @@ h2 {
 
 #hidden-nav a {
     color: black;
+    display: block;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     transition: .5s;
 }
 
@@ -163,14 +158,14 @@ h2 {
     transition: .5s ;
     top: 12rem;
     left: 1.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
     transform: translatex(0%);
     overflow-x: hidden;
     z-index: 2;
 }
 
 .hidden.open p {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .hidden a {
@@ -193,37 +188,37 @@ h2 {
     color: lightpink;
 }
 
-
-div#home{
-    background-image: url("https://cdn.britannica.com/40/75640-050-F894DD85/tiger-Siberian.jpg");
+.fruitty:nth-child(1){
+    background-attachment: fixed;
+    z-index: 0;
+}
+   
+.fruitty:nth-child(2){
     background-attachment:fixed;
     z-index: 0;
 }
 
-div#arrow{
-    background-image: url("https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg");
+.fruitty:nth-child(3){
     background-attachment: fixed;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip:text;
     height: 20%;
     z-index: 1;
+    overflow-x: clip;
 }
 
-div#projects{
+.fruitty:nth-child(4){
+    
     height: 4em;
     background-image: url("https://scitechdaily.com/images/Goosebumps.jpg");
     z-index: 1;
 }
 
-div#skills {
+#bear {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a9/GrizzlyBearJeanBeaufort.jpg");;
     background-attachment: fixed;
     z-index: 0;
-}
-
-div#last {
-    background-image:url("https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg");
 }
 
 .grid {
@@ -243,7 +238,8 @@ div#last {
 }
 
 #grid2 {
-    gap: 5rem;
+    gap: 9rem;
+    scroll-snap-align:inherit;
 }
 
 #footer-card{

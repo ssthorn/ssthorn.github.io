@@ -16,7 +16,7 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     scroll-behavior: smooth;
     
 }
@@ -137,7 +137,6 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: left;
-    background-color: rgb(0, 0, 0, 0.5);
     width: 80vw;
     height: 20%;
     position: fixed;
@@ -156,7 +155,7 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: left;
-    background-color: rgb(0, 0, 0, 0.5);
+    /* background-color: rgb(0, 0, 0, 0.5); */
     width: 80vw;
     height: 20%;
     position: fixed;
@@ -169,13 +168,9 @@ h2 {
     z-index: 2;
 }
 
-.hidden.open p {
-    font-size: 1.5rem;
-}
-
 .hidden a {
     color: lightpink;
-    background-color: rgb(67, 105, 136);
+
     font-size: 1em;
     text-decoration: none;
     width: fit-content;
@@ -184,7 +179,7 @@ h2 {
 
 #links {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* justify-items: center; */
 }
 
@@ -246,41 +241,8 @@ div#last {
     gap: 1rem;
 }
 
-#footer-card{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: linear-gradient(white,black);
-    height: 25%;
-    z-index: 0;
-
-}
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.fixed-header, .fixed-footer{
-    width: 100%;
-    position: fixed;        
-    padding:0;
-    height: 2em;
-    z-index: 10;
-}
-
-.fixed-header{
-    display: flex;
+.fixed-header {
     top: 0;
-}
-
-.fixed-footer{
-    bottom: 0;
 }
 
 .container-menu-name{
@@ -290,16 +252,40 @@ a {
     margin: 0 auto;
 }
 
-.bottom {
-    justify-content: right;
+.footer-container {
+    width: 100%;
+}
+.sticky, .fixed-header {
+    position: fixed;
+    bottom: .5rem;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    height: 3rem;
 }
 
-nav a{
-    color: #fff;
-    text-decoration: none;
-    padding: 1em;
-    display: inline-block;
+.sticky ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
 }
+
+.sticky ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.sticky ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sticky ul li a:hover {
+    color:orange;
+}
+
+
 
 @media screen and (min-width: 480px){
     html {
@@ -318,7 +304,7 @@ nav a{
         justify-content: center;
         align-items: center;
         text-align: left;
-        background-color: rgb(0, 0, 0, 0.5);
+   
         width: 80vw;
         height: 20%;
         position: fixed;
@@ -337,7 +323,7 @@ nav a{
         justify-content: center;
         align-items: center;
         text-align: left;
-        background-color: rgb(0, 0, 0, 0.5);
+     
         width: 80vw;
         height: 20%;
         position: fixed;
@@ -357,8 +343,8 @@ nav a{
     
     .hidden a {
         color: lightpink;
-        background-color: rgb(67, 105, 136);
-        font-size: 2em;
+
+        font-size: 2rem;
         text-decoration: none;
         width: fit-content;
         cursor: pointer;
@@ -381,16 +367,18 @@ nav a{
         justify-content: center;
         align-items: center;
         text-align: left;
-        background-color: rgb(0, 0, 0, 0.5);
-        width: 50vw;
-        height: 50vh;
+      
+        width: 80vw;
+        height: 20%;
         position: fixed;
         transition: .5s ;
-        top: 2rem;
-        left: 2rem;
+        top: 12rem;
+        left: 1.5rem;
+        padding: 1rem;
         transform: translatex(-200%);
         overflow-x: hidden;
         z-index: 2;
+    
     }
 
     .hidden.open {
@@ -399,17 +387,19 @@ nav a{
         justify-content: center;
         align-items: center;
         text-align: left;
-        background-color: rgb(0, 0, 0, 0.5);
-        width: 50vw;
-        height: 50vh;
+
+        width: 80vw;
+        height: 20%;
         position: fixed;
         transition: .5s ;
-        top: 2rem;
-        left: 2rem;
+        top: 12rem;
+        left: 4rem;
+        padding: 1rem;
         transform: translatex(0%);
         overflow-x: hidden;
         z-index: 2;
     }
+
     .hidden p , .hidden.open p {
         font-size: 18px;
     }

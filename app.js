@@ -29,7 +29,7 @@ $(()=>{
     $('#links').removeClass("open");
     $('#resume').removeClass("open");
     $('#about').removeClass("open");
-    $('html, body').animate({ scrollBottom: 0 }, 'fast');
+    
     
     });
     
@@ -55,11 +55,7 @@ $(()=>{
         $('html, body').animate({ scrollTop: 0 }, 'fast');
     });
     
-    $('#footer-card').click(function(){
-        $('.open').removeClass("open");
-        $('html, body').animate({ scrollTop: 0 }, 'fast');
     
-    });
     
     $('#welcome').on({
         mouseover: function(){

@@ -19,7 +19,7 @@ iframe{
 img{
     border-radius: 50%;
     display: inline;
-    margin-left: 65vw;
+    margin-left: 76vw;
 }
 
 .dot, p{
@@ -28,7 +28,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     padding:5vh;
-    width: 25%;
+    /* width: 25vw; */
     border: 10px solid blue;
     /* background-color: blue; */
     color: red;

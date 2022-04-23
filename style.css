@@ -2,6 +2,7 @@
     font-family: arimo;
 }
 body{
+    /* display: block; */
     text-align: right;
     margin: 3rem;
 }
@@ -17,15 +18,20 @@ iframe{
 }
 img{
     border-radius: 50%;
+    display: inline;
+    margin-left: 65vw;
 }
 
-.dot{
+.dot, p{
     display: block;
+    text-align: justify;
     margin-left: auto;
     margin-right: auto;
     padding:5vh;
-    width: 20%;
-    background-color: blue;
+    width: 25%;
+    border: 10px solid blue;
+    /* background-color: blue; */
+    color: red;
 }
 .name{
     position:absolute;

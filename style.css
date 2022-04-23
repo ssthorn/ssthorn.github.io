@@ -4,7 +4,6 @@
 body{
     text-align: right;
     margin: 3rem;
-    
 }
 select, option{
     border: none;
@@ -16,6 +15,10 @@ iframe{
     border: none;
     justify-content: center;
 }
+img{
+    border-radius: 50%;
+}
+
 .dot{
     display: block;
     margin-left: auto;
@@ -27,4 +30,7 @@ iframe{
 .name{
     position:absolute;
     top:0;
+}
+.pagehead{
+    color:green;
 }

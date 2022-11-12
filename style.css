@@ -10,7 +10,7 @@ html {
 body{
   font-size: 1rem;
   margin: 3rem;
-  background-color:rgb(224, 216, 199);
+  background-color:#f9f9f9f9;
 }
 .main {
   display: flex;
@@ -50,10 +50,12 @@ body{
   margin: 0 16px 0 0;
   text-align: right;
   list-style: none;
+  
 
 }
-.nav-list-item {
-  
+.nav-list-item, a {
+  color: gray;
+  text-decoration: none;
 }
 .nav-link {
   display: inline-block;

@@ -3,14 +3,22 @@ html {
 }
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    letter-spacing: .5px;
+  font-family: courier;
+  font-weight: 400;
+  letter-spacing: .5px;
 }
 body{
-    font-size: 1rem;
-    margin: 3rem;
-    background-color:rgb(224, 216, 199);
+  font-size: 1rem;
+  margin: 3rem;
+  background-color:rgb(224, 216, 199);
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.name,h2 {
+ padding: 0;
+ margin: 0;
 }
 .column {
   display: flex;
@@ -21,17 +29,22 @@ body{
 }
 .sidebar {
   display: flex 0 0 14rem;
-
 }
 #nav {
-  position: sticky;
+  /* position: fixed;
   top: 3rem;
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
   margin-right: 32px;
   border-right: 2px solid black;
-  text-align: right;
+  text-align: right; */
+  
+  position: fixed;
+  transform: translateX(-9rem);
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 .nav-list {
   margin: 0 16px 0 0;
@@ -52,17 +65,18 @@ body{
 }
 
 p{
-    display: block;
-    font-family: courier;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  display: block;
+  font-family: courier;
+  text-align: justify;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 
 }
 .sector {
-  height: 20rem;
-  background: #a6a6a6;
+  height: 100vh;
+  width:30rem;
   margin-block-start:1em;
   margin-block-end:1em;
 }

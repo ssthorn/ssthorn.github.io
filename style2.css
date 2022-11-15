@@ -62,3 +62,21 @@ html {
     height: 100vh;
     padding-top: 4em;
     }
+#footer{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    margin-bottom: 4em;
+    height: 3em;
+    width: auto;
+    background:#a1a1a1;
+    }
+#bottomBar{
+    margin-left:50%;
+    background: red;
+    position: relative;
+    height: 3em;
+    width: 70px;
+    }

@@ -1,22 +1,52 @@
-// const btn = document.getElementById('btn');
-// const link = document.querySelector('link');
+///////////////////////////custom cursor stuff//////
 
-// link.addEventListener('click', function onClick(e) {
-//   // 👇️ change background color
-  
-//   document.body.style.backgroundColor = 'salmon';
-//   console.log("clicker")
-  // 👇️ optionally change text color
-//   document.body.style.color = 'white';
-  
+
+//////////////////////////////end custom cursor stuff//////
+
+/////////////////////////////color stuff//
+function randomColor() {
+  let color = [];
+  for (let i = 0; i < 3; i++) {
+    color.push(Math.floor(Math.random() * 256));
+  }
+  return 'rgb(' + color.join(', ') + ')';
+} 
+
+
+// document.addEventListener("mouseover", function(){
+//   document.body.style.backgroundColor = randomColor();
 // });
 
-var button = document.querySelector("button");
+// document.querySelector('').addEventListener('mouseover', event => {
+//       event.target.style.color = randomColor();
 
-button.addEventListener("click", function() {
-    const curColour = document.body.style.backgroundColor;
-    if (curColour != 'red'){
-        document.body.style.backgroundColor = "blue";
-    }
-    // document.body.style.backgroundColor = curColour === 'red' ? 'blue' : 'red';
+document.getElementById('name').addEventListener('mouseover', event => {
+  event.target.style.color = randomColor();
 });
+document.getElementById('name').addEventListener('click', event => {
+  event.target.style.color = randomColor();
+});
+
+document.getElementById('square').addEventListener('mouseover', event => {
+  event.target.style.background = randomColor();
+});
+document.getElementById('square').addEventListener('click', event => {
+  event.target.style.background = randomColor();
+});
+
+const myName = document.getElementById('name');
+const theSquare = document.getElementById('square');
+
+
+function getColor(){
+  console.log("name color: " + myName.style.color)
+  console.log("square color: " + theSquare.style.background)
+}
+/////////////////////////////end color stuff//
+
+
+
+
+
+
+

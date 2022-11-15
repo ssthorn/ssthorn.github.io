@@ -6,52 +6,59 @@ html {
     font-size: 1rem;
     /* margin: 3rem; */
     background-color:#f9f9f9f9;
-  }
-  .main {
+    cursor: crosshair;
+    }
+.main {
     display: flex;
     justify-content: center;
     margin: 2%;
-  }
-  .name {
+    }
+.name {
     width: 100%;
     position: fixed;
     display: flex;
     justify-content: left;
-  }
-  .name, h1, h2, h3, a {
+    }
+.name, h1, h2, h3, a {
     text-transform: capitalize;
-  }
-  .name,h2 {
+    cursor: crosshair;
+    }
+.name,h2 {
     padding: 0;
     margin: 0;
-    
-   }
-   .sidebar {
+    }
+#square {
+    height: 2rem;
+    width: 2rem;
+    background: red;
+    }
+#square2 {
+    height: 2rem;
+    width: 2rem;
+    background: #a1a1a1;
+    }
+.sidebar {
     display: flex;
     justify-content: right;
-   }
-   #nav {
+    }
+#nav {
     position: fixed;
     top: 0;
-   }
-   .nav-list {
+    }
+.nav-list {
     display: flex;
     align-content: space-between;
     position:;
-   }
-   .nav-link{
-    display: inline-block;  
-   }
-   .nav-list-item, a{
-    color: gray;
+    }
+.nav-list-item, a{
+    color: #a1a1a1;
     text-decoration: none;
     list-style: none;
     margin-block-start:1em;
     margin-block-end:1em;
     padding: 0 2px;
-   }
-   .sector{
+    }
+.sector{
     height: 100vh;
     padding-top: 4em;
-   }
-   
+    }

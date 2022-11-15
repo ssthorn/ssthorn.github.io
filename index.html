@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZ2Z7C9QWT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NZ2Z7C9QWT');
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style2.css">
+
     <title>sam</title>
 </head>
 <body>
@@ -23,7 +37,9 @@
         <div class="column">
           <div class="sidebar">
              <nav id="nav">
-                <div class="name"><h2>sam thorn</h2></div>
+                <div class="name" >
+                    <h2 id="name">sam thorn</h2>
+                    <span id="square"></span><span id="square2" onclick="getColor()"></span></div>
                     <ul class="nav-list">
                         <li class="nav-list-item">
                             <a class="button" href="#about">about</a>

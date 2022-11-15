@@ -1,0 +1,7 @@
+name color: rgb(41, 231, 180)
+square color: rgb(175, 131, 140)
+
+square color: rgb(124, 98, 8)
+
+name color: rgb(77, 122, 120)
+square color: rgb(222, 224, 89)

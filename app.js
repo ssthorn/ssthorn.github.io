@@ -33,14 +33,18 @@ document.getElementById('square').addEventListener('mouseover', event => {
 document.getElementById('square').addEventListener('click', event => {
   event.target.style.background = randomColor();
 });
+document.getElementById('main').addEventListener('click', event => {
+  event.target.style.background = randomColor();
+});
 
 const myName = document.getElementById('name');
 const theSquare = document.getElementById('square');
 
 
 function getColor(){
-  console.log("name color: " + myName.style.color)
-  console.log("square color: " + theSquare.style.background)
+  let nameSquareColor = (("name color: " + myName.style.color) + ("square color: " + theSquare.style.background));
+  
+  console.log(nameSquareColor)
 }
 /////////////////////////////end color stuff//
 

@@ -1,8 +1,3 @@
-///////////////////////////custom cursor stuff//////
-
-
-//////////////////////////////end custom cursor stuff//////
-
 /////////////////////////////color stuff//
 function randomColor() {
   let color = [];
@@ -11,14 +6,6 @@ function randomColor() {
   }
   return 'rgb(' + color.join(', ') + ')';
 } 
-
-
-// document.addEventListener("mouseover", function(){
-//   document.body.style.backgroundColor = randomColor();
-// });
-
-// document.querySelector('').addEventListener('mouseover', event => {
-//       event.target.style.color = randomColor();
 
 document.getElementById('name').addEventListener('mouseover', event => {
   event.target.style.color = randomColor();
@@ -33,13 +20,22 @@ document.getElementById('square').addEventListener('mouseover', event => {
 document.getElementById('square').addEventListener('click', event => {
   event.target.style.background = randomColor();
 });
+
+// document.getElementById('main').addEventListener('mouseover', event => {
+//   event.target.style.background = randomColor();
+// });
 document.getElementById('main').addEventListener('click', event => {
   event.target.style.background = randomColor();
 });
 
+// document.getElementsByClassName('shift').addEventListener('mouseover', event => {
+//   event.target.style.color = randomColor();
+// });
+
+
+
 const myName = document.getElementById('name');
 const theSquare = document.getElementById('square');
-
 
 function getColor(){
   let nameSquareColor = (("name color: " + myName.style.color) + ("square color: " + theSquare.style.background));

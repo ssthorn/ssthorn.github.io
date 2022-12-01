@@ -19,8 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
-    <title>sam</title>
+    <title>Sam Thorn Studio</title>
 </head>
 <body>
     <header class="header">
@@ -38,23 +39,23 @@
           <div class="sidebar">
              <nav id="nav">
                 <div class="name" >
-                    <h2 id="name">sam thorn</h2>
-                    <span id="square"></span><span id="square2" onclick="getColor()"></span></div>
+                    <h2 id="name" onload="randomColor()">sam thorn</h2>
+                    <span id="square" onload="randomColor()"></span><span id="square2" onclick="getColor()"></span></div>
                     <ul class="nav-list">
                         <li class="nav-list-item">
-                            <a class="button" href="#about">about</a>
+                            <a class="button" href="#about" class="shift">about</a>
                         </li>
                         <li class="nav-list-item">
-                            <a class="button" href="#projects">projects</a>
+                            <a class="button" href="#projects" class="shift">projects</a>
                         </li>
                         <li class="nav-list-item">
-                            <a class="button" href="#versed">versed</a>
+                            <a class="button" href="#versed" class="shift">versed</a>
                         </li>
                         <li class="nav-list-item">
-                            <a class="button" href="#cv">cv</a>
+                            <a class="button" href="#cv" class="shift">cv</a>
                         </li>
                         <li class="nav-list-item">
-                            <a class="button" href="#contact">contact</a><br>
+                            <a class="button" href="#contact" class="shift">contact</a><br>
                         </li>
                     </ul>
                 </nav>
@@ -62,27 +63,27 @@
             <div class="content">
                 <!--<div class="name"><h2>sam thorn</h2></div>-->
                 <section class="sector" id="about"><h3>about</h3>
-                    <p>I offer development and design services for web-based projects. As a full-stack developer with an arts background, I guide projects to produce functional and striking statements from end to end. I engage the user and enrich content. I bring focus to complex problems with expertise. My strength of vision and technical skills inspire teams and clients alike. I am always learning.</p></section>
+                    <p class="shift">I offer development and design services for web-based projects. As a full-stack developer with an arts background, I guide projects to produce functional and striking statements from end to end. I engage the user and enrich content. I bring focus to complex problems with expertise. My strength of vision and technical skills inspire teams and clients alike. I am always learning.</p></section>
                 <section class="sector" id="projects">
-                    <h3>projects</h3>
+                    <h3 class="shift">projects</h3>
                     <ul>
-                        <li><a href="https://www.flaunt.com/"target="_blank">flaunt.com</a></li>
+                        <li><a href="https://www.flaunt.com/"target="_blank" class="shift">flaunt.com</a></li>
                     </ul>
                 </section>
                 <section class="sector" id="versed">
-                    <h3>versed</h3>
-                    <p>HTML, CSS, Javascript, React.js, MongoDB, Django, Express.js, Node.js</p>
+                    <h3 class="shift">versed</h3>
+                    <p class="shift">HTML, CSS, Javascript, React.js, MongoDB, Django, Express.js, Node.js</p>
                 </section>
                 <section class="sector" id="cv"><h3>cv</h3></section>
                 <section class="sector" id="contact">
-                    <h3>contact</h3>
+                    <h3 class="shift">contact</h3>
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/samthorn/"target="_blank">linkedin</a></li>
-                        <li><a href="mailto:sam.stearn@gmail.com"target="_blank">email</a></li>
+                        <li><a href="https://www.linkedin.com/in/samthorn/"target="_blank" class="shift">linkedin</a></li>
+                        <li><a href="mailto:sam.stearn@gmail.com"target="_blank" class="shift">email</a></li>
                     </ul>
                 </section>
-                <footer id="footer">
-                    <div id="bottomBar"></div>
+                <footer id="footer" onload="randomColor()">
+                    <div id="bottomBar" onload="randomColor()"></div>
                 </footer>
             </div>
             <!--content-->

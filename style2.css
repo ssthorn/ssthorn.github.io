@@ -80,3 +80,20 @@ html {
     height: 3em;
     width: 70px;
     }
+#projects{
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: conic-gradient(#c05851, #c78274, #f3eba8, #c4d5bd, #beddf9, #c8d4f1, #c94c69, #c05851 );
+}
+#versed{
+    background-image: linear-gradient(#c5d7f4, #f9f9f9);
+}
+#cv{
+    background-image: linear-gradient(#f9f9f9, #c5d7f4);
+}
+.respop{
+    font-size: 1.7rem;
+    text-align: justify;
+    letter-spacing: 3px;
+    word-spacing: -7px;
+    
+}
